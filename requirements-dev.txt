@@ -1,0 +1,7 @@
+# Development-only deps (not needed to run the API/dashboard).
+# Install with: pip install -r requirements-dev.txt
+-r requirements.txt
+
+jupyter==1.1.1
+nbconvert==7.16.4
+ipykernel==6.29.5
