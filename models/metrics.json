@@ -1,0 +1,178 @@
+{
+  "dataset": {
+    "rows": 150000,
+    "default_rate": 0.06684
+  },
+  "best_model": "xgboost",
+  "scale_pos_weight": 13.960106382978724,
+  "threshold": 0.19,
+  "cost_assumption": {
+    "fn": 5.0,
+    "fp": 1.0
+  },
+  "validation_comparison": {
+    "logreg": {
+      "roc_auc": 0.8455749534896462,
+      "pr_auc": 0.366563212822582
+    },
+    "rf": {
+      "roc_auc": 0.855408656426446,
+      "pr_auc": 0.38311742983385516
+    },
+    "xgboost": {
+      "roc_auc": 0.8588804377696587,
+      "pr_auc": 0.3867718539444727
+    }
+  },
+  "test": {
+    "roc_auc": 0.871064676226918,
+    "pr_auc": 0.4039384836082391,
+    "brier": 0.048899351280379665,
+    "threshold": 0.19,
+    "precision": 0.3777078965758211,
+    "recall": 0.5391521197007482,
+    "f1": 0.44421614957879596,
+    "confusion_matrix": {
+      "tn": 26214,
+      "fp": 1781,
+      "fn": 924,
+      "tp": 1081
+    },
+    "n": 30000,
+    "positives": 2005
+  },
+  "global_importance": [
+    {
+      "feature": "RevolvingUtilizationOfUnsecuredLines",
+      "mean_abs_shap": 0.754580020904541
+    },
+    {
+      "feature": "TotalPastDue",
+      "mean_abs_shap": 0.7386470437049866
+    },
+    {
+      "feature": "age",
+      "mean_abs_shap": 0.21934464573860168
+    },
+    {
+      "feature": "NumberOfOpenCreditLinesAndLoans",
+      "mean_abs_shap": 0.179875910282135
+    },
+    {
+      "feature": "DebtRatio",
+      "mean_abs_shap": 0.13406509160995483
+    },
+    {
+      "feature": "NumberOfTimes90DaysLate",
+      "mean_abs_shap": 0.1031012311577797
+    },
+    {
+      "feature": "NumberRealEstateLoansOrLines",
+      "mean_abs_shap": 0.0853477194905281
+    },
+    {
+      "feature": "IncomePerDependent",
+      "mean_abs_shap": 0.07073196768760681
+    },
+    {
+      "feature": "MonthlyIncome",
+      "mean_abs_shap": 0.06888727098703384
+    },
+    {
+      "feature": "NumberOfTime60-89DaysPastDueNotWorse",
+      "mean_abs_shap": 0.05180998146533966
+    },
+    {
+      "feature": "NumberOfTime30-59DaysPastDueNotWorse",
+      "mean_abs_shap": 0.01767919212579727
+    },
+    {
+      "feature": "MonthlyIncome_log",
+      "mean_abs_shap": 0.015980936586856842
+    },
+    {
+      "feature": "NumberOfDependents",
+      "mean_abs_shap": 0.007004896178841591
+    },
+    {
+      "feature": "MonthlyIncome_missing",
+      "mean_abs_shap": 0.007004219572991133
+    },
+    {
+      "feature": "NumberOfDependents_missing",
+      "mean_abs_shap": 0.003923636861145496
+    }
+  ],
+  "feature_stats": {
+    "RevolvingUtilizationOfUnsecuredLines": {
+      "median": 0.154180737,
+      "p05": 0.0,
+      "p95": 0.9999999,
+      "min": 0.0,
+      "max": 50708.0
+    },
+    "age": {
+      "median": 52.0,
+      "p05": 29.0,
+      "p95": 78.0,
+      "min": 0.0,
+      "max": 109.0
+    },
+    "NumberOfTime30-59DaysPastDueNotWorse": {
+      "median": 0.0,
+      "p05": 0.0,
+      "p95": 2.0,
+      "min": 0.0,
+      "max": 98.0
+    },
+    "DebtRatio": {
+      "median": 0.366507841,
+      "p05": 0.004329004,
+      "p95": 2449.0,
+      "min": 0.0,
+      "max": 329664.0
+    },
+    "MonthlyIncome": {
+      "median": 5400.0,
+      "p05": 1300.0,
+      "p95": 14587.599999999991,
+      "min": 0.0,
+      "max": 3008750.0
+    },
+    "NumberOfOpenCreditLinesAndLoans": {
+      "median": 8.0,
+      "p05": 2.0,
+      "p95": 18.0,
+      "min": 0.0,
+      "max": 58.0
+    },
+    "NumberOfTimes90DaysLate": {
+      "median": 0.0,
+      "p05": 0.0,
+      "p95": 1.0,
+      "min": 0.0,
+      "max": 98.0
+    },
+    "NumberRealEstateLoansOrLines": {
+      "median": 1.0,
+      "p05": 0.0,
+      "p95": 3.0,
+      "min": 0.0,
+      "max": 54.0
+    },
+    "NumberOfTime60-89DaysPastDueNotWorse": {
+      "median": 0.0,
+      "p05": 0.0,
+      "p95": 1.0,
+      "min": 0.0,
+      "max": 98.0
+    },
+    "NumberOfDependents": {
+      "median": 0.0,
+      "p05": 0.0,
+      "p95": 3.0,
+      "min": 0.0,
+      "max": 20.0
+    }
+  }
+}
