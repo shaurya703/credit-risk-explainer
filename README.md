@@ -1,5 +1,7 @@
 # Credit Risk Explainer
 
+[![CI](https://github.com/shaurya703/credit-risk-explainer/actions/workflows/ci.yml/badge.svg)](https://github.com/shaurya703/credit-risk-explainer/actions/workflows/ci.yml)
+
 An end-to-end machine-learning application that predicts loan-default risk **and
 explains every prediction**. The full chain — reproducible data pipeline → trained,
 calibrated model → FastAPI service → interactive Streamlit dashboard — with
